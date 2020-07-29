@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<link
+			href="https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon+SC&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Akronim&display=swap"
+			rel="stylesheet"
+		/>
+
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<title>BRYN HEATH</title>
+		<link rel="shortcut icon" href="favicon.png" />
+
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<script>
+			document.documentElement.className = "js";
+			var supportsCssVars = function () {
+				var e,
+					t = document.createElement("style");
+				return (
+					(t.innerHTML = "root: { --tmp-var: bold; }"),
+					document.head.appendChild(t),
+					(e = !!(
+						window.CSS &&
+						window.CSS.supports &&
+						window.CSS.supports("font-weight", "var(--tmp-var)")
+					)),
+					t.parentNode.removeChild(t),
+					e
+				);
+			};
+			supportsCssVars() ||
+				alert(
+					"Please view this demo in a modern browser that supports CSS Variables."
+				);
+		</script>
+		<!--script src="//tympanus.net/codrops/adpacks/analytics.js"></script-->
+	</head>
+	<body class="demo-1 loading">
+		<main>
+			<!-- <div class="message">Some message for mobile (if needed).</div> -->
+			<div class="frame">
+				<div class="frame__title-wrap">
+					<!-- top left area  -->
+					<!-- <h1 class="frame__title">Bryn Heath</h1> -->
+						<a href="https://drive.google.com/uc?export=download&id=13Cp7DgK3x-4AQd2aqTpAup5NJ7XGv-ju" target="_blank">
+						 <i class="far fa-file-pdf" style="font-size: 28px;"> CV</i>
+						</a>
+					<p class="frame__tagline"></a>HTML | CSS | JAVASCRIPT | REACT | REDUX | RUBY / RAILS | SQL | GIT</p>
+				</div>
+
+				
+				<div class="frame__links"> 
+					 
+					<!-- external / media links  -->
+						<a href="https://uk.linkedin.com/in/bryn-heath" target="_blank">
+							<i class="fab fa-linkedin" style="font-size: 32px;"></i>
+						</a>
+
+						<a href="https://github.com/COFFEEEADDICT" target="_blank">
+							<i class="fab fa-github" style="font-size: 32px;"></i>
+						</a>
+						 
+						<a href="https://www.freecodecamp.org/fcc7b53983a-b02f-4206-a766-7e795ffcc824" target="_blank">
+							<i class="fab fa-free-code-camp" style="font-size: 32px;"></i>
+						</a>
+
+						<!-- <a href="https://www.codewars.com/users/COFFEEEADDICT" target="_blank">
+							<img src="./img/codewars.svg" style="background-color: white; height: 28px;" >
+					   </a> -->
+
+ 
+				<!-- external / media links  --> 
+						
+					 
+				</div>
+				<div class="frame__demos">
+					<!-- <a href="index.html" class="frame__demo frame__demo--current">Bryn</a> -->
+					<a href="portfolio.html" class="frame__demo">Portfolio</a>
+					 
+				</div>
+			</div>
+			<div class="content">
+				<div id="rgbKineticSlider" class="rgbKineticSlider"></div>
+				<nav>
+					<a href="#" class="main-nav prev" data-nav="previous"
+						>False  <<span></span
+					></a>
+					<a href="#" class="main-nav next" data-nav="next"
+						>>  True<span></span
+					></a>
+				</nav>
+				<span class="notice">Click & Swipe</span>
+			</div>
+		</main>
+
+		<script src="js/libs/imagesLoaded.pkgd.min.js"></script>
+		<script src="js/libs/pixi.min.js"></script>
+		<script src="js/libs/pixi-filters.min.js"></script>
+		<script src="js/libs/TweenMax.min.js"></script>
+		<script src="js/rgbKineticSlider.js"></script>
+		<script>
+			// images setup
+			const images = ["img/Bryn4.jpg", "img/b22.jpg", "img/111.jpg"];
+
+			// content setup
+			const texts = [
+				["BRYN HEATH", "Developer | ブリン・ヒース| London, UK"],
+				["About me", "I like coffee & code"],
+				["2020","FLATIRON SCHOOL - Software Engineering"],
+			];
+
+			//
+			rgbKineticSlider = new rgbKineticSlider({
+				slideImages: images, // array of images > must be 1920 x 1080
+				itemsTitles: texts, // array of titles / subtitles
+
+				backgroundDisplacementSprite: "img/map-9.jpg", // slide displacement image
+				cursorDisplacementSprite: "img/displace-circle.png", // cursor displacement image
+
+				cursorImgEffect: true, // enable cursor effect
+				cursorTextEffect: false, // enable cursor text effect
+				cursorScaleIntensity: 0.4, // cursor effect intensity
+				cursorMomentum: 0.14, // lower is slower
+
+				swipe: true, // enable swipe
+				swipeDistance: window.innerWidth * 0.2, // swipe distance - ex : 580
+				swipeScaleIntensity: 0.4, // scale intensity during swipping
+
+				slideTransitionDuration: 1.5, // transition duration
+				transitionScaleIntensity: 7, // scale intensity during transition
+				transitionScaleAmplitude: 45, // scale amplitude during transition
+
+				nav: true, // enable navigation
+				navElement: ".main-nav", // set nav class
+
+				imagesRgbEffect: true, // enable img rgb effect
+				imagesRgbIntensity: 0.2, // set img rgb intensity
+				navImagesRgbIntensity: 35, // set img rgb intensity for regular nav
+
+				textsDisplay: true, // show title
+				textsSubTitleDisplay: true, // show subtitles
+				textsTiltEffect: true, // enable text tilt
+				googleFonts: ["Playfair Display:700", "IM Fell French Canon SC:400"], // select google font to use
+				buttonMode: false, // enable button mode for title
+				textsRgbEffect: true, // enable text rgb effect
+				textsRgbIntensity: 0.03, // set text rgb intensity
+				navTextsRgbIntensity: 15, // set text rgb intensity for regular nav
+
+				textTitleColor: "white", // title color
+				textTitleSize: 125, // title size
+				mobileTextTitleSize: 125, // title size
+				textTitleLetterspacing: 3, // title letterspacing
+
+				textSubTitleColor: "white", // subtitle color ex : 0x000000
+				textSubTitleSize: 21, // subtitle size
+				mobileTextSubTitleSize: 21, // mobile subtitle size
+				textSubTitleLetterspacing: 4, // subtitle letter spacing
+				textSubTitleOffsetTop: 90, // subtitle offset top
+				mobileTextSubTitleOffsetTop: 90, // mobile subtitle offset top
+			});
+		 
+		</script>
+		<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+	</body>
+</html>
