@@ -199,3 +199,14 @@ nav a:hover span {
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
+
+@media screen and (max-width: 53em) {
+	.b-canvas {
+		display: none;
+	}
+
+	/* .block {
+		width: 100px;
+		height: 100px;
+	} */
+}

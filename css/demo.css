@@ -82,4 +82,18 @@ nav a.prev {
 		left: 10vw;
 		left: 3rem;
 	}
+
+	.frame {
+		color: black;
+		/* max-height: 40vh; */
+		max-height: 13em;
+	}
+	.frame__demo {
+		color: black;
+		/* font-weight: 300; */
+	}
+
+	/* .rgbKineticSlider {
+		height: 300px;
+	} */
 }
