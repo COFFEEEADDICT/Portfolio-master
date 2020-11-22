@@ -1,18 +1,18 @@
 html,
 body {
-	background: #161616;
-	margin: 0;
-	padding: 0;
-	width: 100%;
-	height: 100vh;
-	overflow: hidden;
-	font-family: "IM Fell French Canon SC", serif;
-	cursor: url(http://www.rw-designer.com/cursor-view/37896.png), auto;
+  background: #161616;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  font-family: 'IM Fell French Canon SC', serif;
+  cursor: url(http://www.rw-designer.com/cursor-view/37896.png), auto;
 
-	/* cursor: pointer; */
-	/* cursor: url("img/codewars.svg"), auto; */
+  /* cursor: pointer; */
+  /* cursor: url("img/codewars.svg"), auto; */
 
-	/* cursor: url("../img/cursor.png"), auto !important; */
+  /* cursor: url("../img/cursor.png"), auto !important; */
 }
 /* html,
 body {
@@ -26,161 +26,166 @@ body {
 } */
 
 .main {
-	color: #8b8b8b;
-	text-decoration: none;
+  color: #8b8b8b;
+  text-decoration: none;
 }
 
 .main:hover {
-	color: #fff;
-	text-decoration: none;
+  color: #fff;
+  text-decoration: none;
 }
 
 .header {
-	position: fixed;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	font-family: "IM Fell French Canon SC", serif;
-	color: white;
-	z-index: 2;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'IM Fell French Canon SC', serif;
+  color: white;
+  z-index: 2;
 
-	/* text-align: left; */
+  /* text-align: left; */
 }
 
 .subheader {
-	position: fixed;
-	top: 16%;
-	left: 45%;
-	transform: translate(12%, -20%);
-	/* font-family: "Monument Extended"; */
-	/* text-transform: uppercase; */
-	color: #aaa;
-	z-index: 2;
-	/* font-family: "IM Fell French Canon SC", serif; */
+  position: fixed;
+  top: 16%;
+  left: 45%;
+  transform: translate(12%, -20%);
+  /* font-family: "Monument Extended"; */
+  /* text-transform: uppercase; */
+  color: #aaa;
+  z-index: 2;
+  /* font-family: "IM Fell French Canon SC", serif; */
 
-	/* text-align: left; */
-}
-.next {
-	left: 85.4%;
-	top: 42%;
+  /* text-align: left; */
 }
 
 .container {
-	position: absolute;
-	width: 130%;
-	height: 200vh;
+  /* position: absolute; */
+  /* flex: 1; */
+  width: 100vw;
+  height: 100vh;
 }
 
 .row {
-	display: flex;
-	/* justify-content: space-evenly;
+  display: flex;
+  /* justify-content: space-evenly;
 	margin: 1em 0; */
 }
 
-.block {
-	width: 300px;
-	height: 300px;
-	background: grey;
-	margin: 1em;
-	filter: grayscale(1);
-	opacity: 0.4;
-	transition: 0.8s;
+.imgDiv {
+  width: 300px;
+  flex-direction: column;
+  padding: 40px;
+  /* background: grey; */
+  filter: grayscale(1);
+  opacity: 0.4;
+  transition: 0.8s;
+}
+.imgDiv:hover {
+  filter: grayscale(0);
+  opacity: 1;
 }
 
-.block:hover {
-	filter: grayscale(0);
-	opacity: 1;
+.imgDivText {
+  color: white;
+  font-size: 20px;
+  padding-right: 100px;
 }
 
+/* 
 .block-1 {
-	background: url("../img/rn-todo-app.jpg") no-repeat 50% 50%;
-	background-size: cover;
+  background: url('../img/rn-todo-app.jpg') no-repeat 50% 50%;
+  background-size: cover;
+  flex-direction: column;
 }
 
 .block-2 {
-	background: url() no-repeat 50% 50%;
-	background-size: cover;
+  background: url() no-repeat 50% 50%;
+  background-size: cover;
+  flex-direction: column;
 }
 
 .block-3 {
-	background: url("../img/p3.jpg") no-repeat 50% 50%;
-	background-size: cover;
+  background: url('../img/p3.jpg') no-repeat 50% 50%;
+  background-size: cover;
 }
 
 .block-4 {
-	background: url("../img/rooms.jpg") no-repeat 50% 50%;
-	background-size: cover;
+  background: url('../img/rooms.jpg') no-repeat 50% 50%;
+  background-size: cover;
 }
 
 .block-5 {
-	background: url("../img/checkout.jpg") no-repeat 50% 50%;
-	background-size: cover;
+  background: url('../img/checkout.jpg') no-repeat 50% 50%;
+  background-size: cover;
 }
 
 .block-6 {
-	background: url(" ") no-repeat 50% 50%;
-	background-size: cover;
+  background: url(' ') no-repeat 50% 50%;
+  background-size: cover;
 }
 
 .block-7 {
-	background: url("../img/b44.jpg") no-repeat 50% 50%;
-	background-size: cover;
+  background: url('../img/b44.jpg') no-repeat 50% 50%;
+  background-size: cover;
 }
 
 .block-8 {
-	background: url("eight.jpg") no-repeat 50% 50%;
-	background-size: cover;
+  background: url('eight.jpg') no-repeat 50% 50%;
+  background-size: cover;
 }
 
 .block-9 {
-	background: url("eight.jpg") no-repeat 50% 50%;
-	background-size: cover;
+  background: url('eight.jpg') no-repeat 50% 50%;
+  background-size: cover;
 }
 
 .block-10 {
-	background: url("eight.jpg") no-repeat 50% 50%;
-	background-size: cover;
+  background: url('eight.jpg') no-repeat 50% 50%;
+  background-size: cover;
 }
 
 .block-11 {
-	background: url("../img/bryn12.jpg") no-repeat 50% 50%;
-	background-size: cover;
+  background: url('../img/bryn12.jpg') no-repeat 50% 50%;
+  background-size: cover;
 }
 
 .block-12 {
-	background: url("../img/bryn9.jpg") no-repeat 50% 50%;
-	background-size: cover;
-}
+  background: url('../img/bryn9.jpg') no-repeat 50% 50%;
+  background-size: cover;
+} */
 
 nav a {
-	color: white;
-	text-decoration: none;
-	/*margin-right: 14px;*/
-	position: absolute;
-	top: 50vh;
-	z-index: 1;
+  color: white;
+  text-decoration: none;
+  /*margin-right: 14px;*/
+  position: absolute;
+  top: 50vh;
+  z-index: 1;
 }
 
 nav a:hover,
 nav a:focus {
-	color: white;
-	outline: none;
+  color: white;
+  outline: none;
 }
 
 nav span {
-	position: absolute;
-	width: 100%;
-	height: 1px;
-	background-color: white;
-	display: block;
-	margin-top: 7px;
-	-moz-transition: width 0.2s ease;
-	-webkit-transition: width 0.2s ease;
-	transition: width 0.2s ease;
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: white;
+  display: block;
+  margin-top: 7px;
+  -moz-transition: width 0.2s ease;
+  -webkit-transition: width 0.2s ease;
+  transition: width 0.2s ease;
 }
 
 nav a:hover span {
-	width: 0;
+  width: 0;
 }
 
 /* nav a.next {
@@ -192,20 +197,20 @@ nav a:hover span {
 } */
 
 .wrapper {
-	width: 300px;
-	height: 300px;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 @media screen and (max-width: 53em) {
-	.b-canvas {
-		display: none;
-	}
+  .b-canvas {
+    display: none;
+  }
 
-	/* .block {
+  /* .block {
 		width: 100px;
 		height: 100px;
 	} */
